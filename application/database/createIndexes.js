@@ -11,7 +11,7 @@ module.exports = function() {
 
   return helper.getCollection('templates').then((templates) => {
     return templates.createIndexes([
-      { key: {'_id': 1, 'user_id': 1} }
+      { key: {'user_id': 1} }
     ]);
   });
 
